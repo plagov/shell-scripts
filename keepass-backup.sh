@@ -1,7 +1,7 @@
 #!/bin/bash
 
-source_path="/home/plagov/Dropbox/KeePass/"
-backup_path="/home/plagov/"
+source_path="/home/vplagov/Dropbox/KeePass/"
+backup_path="/home/vplagov/"
 date=$(date +"%Y-%m-%d")
 
 cp $source_path/*.kdbx $backup_path
