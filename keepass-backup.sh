@@ -1,10 +1,10 @@
-#!/bin/bash
+#!/bin/bash -e
 
 source_path="/home/vplagov/Dropbox/KeePass/"
-backup_path="/home/vplagov/"
-date=$(date +"%Y-%m-%d")
+backup_path="/home/vplagov/.keepass-backup/"
 
 cp $source_path/*.kdbx $backup_path
 
-mv $backup_path/Vitali.kdbx $backup_path/Vitali-$date.kdbx
-mv $backup_path/Work.kdbx $backup_path/Work-$date.kdbx
+git add .
+git commit --allow-empty-message -m ''
+git push -u origin master
